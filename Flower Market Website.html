@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="tailwind.css" />
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<script
 			src="https://kit.fontawesome.com/417f4f932b.js"
@@ -10,71 +17,327 @@
 		></script>
 		<title>Flower Market Website</title>
 	</head>
-	<body>
-		<!-- Header/Nav Section -->
+	<body class="flex justify-center">
+		<div class="container max-w-[1140px] mx-4 sm:mx-8">
+			<!-- Header/Nav Section -->
 
-		<header class="mt-[1.875rem] mb-[7.5rem] mx-[9.375rem]">
-			<nav class="flex justify-between">
-				<div class="logo">
-					<a href=""
-						><img
-							class="w-[8.4375rem] h-[5.125rem]"
-							src="assets/logo.png"
-							alt=""
-					/></a>
+			<header class="mt-[1.875rem] sm:mb-[7.5rem] max-md:mb-[28px]">
+				<nav class="flex justify-between">
+					<div class="logo">
+						<a href=""
+							><img
+								class="w-[8.4375rem] h-[5.125rem]"
+								src="assets/logo.png"
+								alt=""
+						/></a>
+					</div>
+					<div
+						class="nav-links flex items-center gap-x-12 text-base text-[#8987A1]"
+					>
+						<div
+							class="navlink hover:text-[#252432] hover:font-bold max-sm:hidden"
+						>
+							<a href="">Home</a>
+						</div>
+						<div
+							class="navlink hover:text-[#252432] hover:font-bold max-sm:hidden"
+						>
+							<a href="">Shop</a>
+						</div>
+						<div
+							class="navlink hover:text-[#252432] hover:font-bold max-sm:hidden"
+						>
+							<a href="">About Us</a>
+						</div>
+						<div class="navlink text-black">
+							<i class="fa-solid fa-cart-shopping"></i>&nbsp&nbsp&nbsp
+							Cart(&dollar;56)
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<!-- Main Body Section -->
+
+			<main class="flex flex-col">
+				<!-- Banner Section -->
+
+				<div class="banner-container">
+					<div
+						class="banner sm:h-[28.8125rem] flex items-end justify-center max-sm:flex-col-reverse max-sm:items-center max-sm:gap-4"
+					>
+						<div
+							class="banner-text flex flex-col gap-y-[.8125rem] max-w-[35.625rem]"
+						>
+							<div class="banner-title">
+								<h2
+									class="noto-serif text-[4.0625rem] max-md:text-[3.25rem] max-sm:text-[1.5rem] font-bold leading-[136%]"
+								>
+									ALWAYS
+									<span class="text-[#E95A08]"
+										>FRESH <br class="sm:hidden" />FLOWERS</span
+									>
+								</h2>
+							</div>
+							<div
+								class="banner-desc inter text-[1.375rem] max-sm:text-[.875rem]"
+							>
+								<p class="text-black/50 leading-[121%]">
+									Indulge your senses with the beauty and fragrance of our fresh
+									flower shop. From classic roses to exotic blooms, we offer a
+									wide variety of fresh flowers that are perfect for any
+									occasion.
+								</p>
+							</div>
+						</div>
+
+						<img
+							class="min-w-1/2"
+							src="assets/hero-flower.png"
+							alt="Flower Bouquet Art"
+						/>
+					</div>
 				</div>
+
+				<!-- Products Card Section -->
+
 				<div
-					class="nav-links flex items-center gap-x-12 text-base text-[#8987A1]"
+					class="products mt-[4.0625rem] sm:mt-[7.5rem] flex flex-col text-center items-center"
 				>
-					<div class="navlink hover:text-[#252432] hover:font-bold">
-						<a href="">Home</a>
+					<div class="plant-text mb-[3.0625rem]">
+						<h3
+							class="noto-serif text-[1.5rem] sm:text-[3.125rem] font-bold mb-4"
+						>
+							<span class="text-[#E95A08]">Our</span> Plants
+						</h3>
+						<p
+							class="inter text-[.875rem] sm:text-[1.375rem] text-black/50 leading-[121%]"
+						>
+							Indulge your senses with the beauty and fragrance of our fresh
+							flower shop. From classic roses to exotic blooms, we offer a wide
+							variety of fresh.
+						</p>
 					</div>
-					<div class="navlink hover:text-[#252432] hover:font-bold">
-						<a href="">Shop</a>
-					</div>
-					<div class="navlink hover:text-[#252432] hover:font-bold">
-						<a href="">About Us</a>
-					</div>
-					<div class="navlink text-black">
-						<i class="fa-solid fa-cart-shopping"></i>&nbsp&nbsp&nbsp
-						Cart(&dollar;56)
+					<div
+						class="card-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[1.25rem] gap-y-[1.875rem]"
+					>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
+						<div
+							class="card sm:w-[16.875rem] w-[10.625rem] flex flex-col items-center"
+						>
+							<img
+								class="mb-[30px]"
+								src="assets/sample-flower-image.png"
+								alt=""
+							/>
+							<h5
+								class="inter text-[1rem] sm:text-[1.375rem] sm:mb-[1.25rem] text-[#111111] font-medium leading-[150%]"
+							>
+								Lily Blossom
+							</h5>
+							<p
+								class="inter text-[#111111] font-bold mb-[1.875rem] text-[1rem] sm:text-[1.375rem] leading-[150%]"
+							>
+								20 USD
+							</p>
+							<button
+								class="bg-[#E95A08] text-[1rem] sm:text-[1.375rem] h-[3.125rem] font-semibold w-full text-white"
+							>
+								ADD TO CART
+							</button>
+						</div>
 					</div>
 				</div>
-			</nav>
-		</header>
 
-		<!-- Main Body Section -->
+				<!-- Highlight & Badge Section -->
 
-		<main class="flex flex-col">
-			<!-- Banner Section -->
+				<div class="highlight"></div>
 
-			<div class="banner mx-[9.375rem]"></div>
+				<!-- Latest Deals Section -->
 
-			<!-- Products Card Section -->
+				<div class="deals"></div>
 
-			<div class="products mx-[9.375rem]"></div>
+				<!-- Sale Card Section -->
 
-			<!-- Highlight & Badge Section -->
+				<div class="sale"></div>
 
-			<div class="highlight mx-[9.375rem]"></div>
+				<!-- Contact Section -->
 
-			<!-- Latest Deals Section -->
+				<div class="contact"></div>
+			</main>
 
-			<div class="deals mx-[9.375rem]"></div>
+			<!-- Footer Section -->
 
-			<!-- Sale Card Section -->
-
-			<div class="sale mx-[9.375rem]"></div>
-
-			<!-- Contact Section -->
-
-			<div class="contact mx-[9.375rem]"></div>
-		</main>
-
-		<!-- Footer Section -->
-
-		<footer>
-			<div class="footer"></div>
-		</footer>
+			<footer>
+				<div class="footer"></div>
+			</footer>
+		</div>
 	</body>
 </html>
