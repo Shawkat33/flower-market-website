@@ -27,3 +27,33 @@ a::selection {
 button:hover {
 	transform: scale(1.05);
 }
+
+.contact {
+	background-image: url(assets/news-letter-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text {
+	align-items: center;
+	gap: 1.4375rem;
+}
+
+.subscribe {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 20.0625rem;
+	height: 3.125rem;
+}
+
+.subscribe input {
+	width: 50vw;
+}
+.subscribe button {
+	width: 25vw;
+}
