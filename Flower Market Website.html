@@ -51,8 +51,9 @@
 								<a href="">About Us</a>
 							</div>
 							<div class="navlink text-black">
-								<i class="fa-solid fa-cart-shopping"></i>&nbsp&nbsp&nbsp
-								Cart(&dollar;56)
+								<a onclick="alert('Flower added to cart')" href=""
+									><i class="fa-solid fa-cart-shopping hover:scale-125"></i></a
+								>&nbsp&nbsp&nbsp Cart(&dollar;56)
 							</div>
 						</div>
 					</nav>
@@ -304,7 +305,7 @@
 					<!-- Highlight & Badge Section -->
 
 					<div
-						class="mt-[13.125rem] highlight grid grid-cols-1 md:grid-cols-2 gap-[1.125rem] md:gap-[3.75rem] justify-items-center"
+						class="mt-[2.625rem] lg:mt-[13.125rem] highlight grid grid-cols-1 lg:grid-cols-2 gap-[1.125rem] md:gap-[3.75rem] justify-items-center"
 					>
 						<div class="relative img">
 							<img
@@ -463,23 +464,23 @@
 			</div>
 		</div> -->
 
-		<div class="contact w-[100vw] h-[70vw] md:h-[37vw] md:">
+		<div class="contact w-[100vw] h-[70vw] md:h-[37vw]">
 			<div class="text flex flex-col">
 				<h3
-					class="noto-serif font-bold text-[1.25rem] md:text-[3.125rem] text-white"
+					class="noto-serif font-bold text-[1.25rem] md:text-[2.25rem] lg:text-[3.125rem] text-white"
 				>
 					Join the colorful Bunch
 				</h3>
 				<div class="subscribe">
 					<input
-						class="placeholder:text-black/50 bg-white text-[1rem] placeholder:p-3 md:w-[45vw]"
+						class="placeholder:text-black/50 bg-white text-[1rem] placeholder:p-3 inter w-[50vw] md:w-[45vw]"
 						placeholder="Write Email"
 						type="email"
 						name=""
 						id=""
 					/>
 					<button
-						class="bg-[#E95A08] text-white text-[1rem] font-semibold md:w-[15vw]"
+						class="bg-[#E95A08] text-white text-[1rem] inter font-semibold w-[25vw] md:w-[15vw]"
 					>
 						Subscribe
 					</button>
@@ -489,8 +490,71 @@
 
 		<!-- Footer Section -->
 
-		<footer>
-			<div class="footer"></div>
+		<footer class="flex justify-center">
+			<div class="max-w-[1140px] mx-4 sm:mx-8 mt-[3.125rem] mb-[3.125rem]">
+				<div
+					class="footer flex lg:flex-row md:flex-wrap flex-col justify-between inter text-black/50 gap-x-[6.875rem] gap-y-[2rem] items-center lg:items-start"
+				>
+					<div class="logo w-[22.5rem]">
+						<a href="">
+							<img class="mx-auto lg:mx-0" src="assets/logo.png" alt="" />
+						</a>
+						<p
+							class="mt-[1rem] inter text-[1.375rem] leading-[121%] text-center lg:text-left"
+						>
+							Indulge your senses with the beauty and fragrance of our fresh
+							flower shop.
+						</p>
+					</div>
+
+					<ul class="space-y-[2rem] whitespace-nowrap text-center lg:text-left">
+						<li><a href="">Home</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+
+					<ul class="space-y-[2rem] whitespace-nowrap text-center lg:text-left">
+						<li><a href="">Features</a></li>
+						<li><a href="">Pricing</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Terms of Service</a></li>
+						<li><a href="">Help Center</a></li>
+					</ul>
+
+					<div class="flex gap-[1.5rem]">
+						<a href="">
+							<img
+								class="w-[2.25rem] h-[2.25rem]"
+								src="assets/icon-linkedin.png"
+								alt=""
+							/>
+						</a>
+						<a href="">
+							<div
+								class="w-[2.25rem] h-[2.25rem] bg-white rounded-full flex items-center justify-center"
+							>
+								<img src="assets/icon-twitter.png" alt="" />
+							</div>
+						</a>
+						<a href="">
+							<img
+								class="w-[2.25rem] h-[2.25rem]"
+								src="assets/icon-facebook.png"
+								alt=""
+							/>
+						</a>
+						<a href="">
+							<img
+								class="w-[2.25rem] h-[2.25rem]"
+								src="assets/icon-youtube.png"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
